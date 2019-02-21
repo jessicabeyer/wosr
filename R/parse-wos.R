@@ -34,7 +34,7 @@ parse_gen_pub_data <- function(doc_list) {
     jsc = ".//fullrecord_metadata//subject[@ascatype='traditional']", # JSCs
     keyword = ".//fullrecord_metadata//keyword", # keywords
     keywords_plus = ".//static_data//keywords_plus/keyword", # keywords plus
-    page = ".//summary//page[1]"
+    page = ".//summary//page/@page_count"
   )
   pub_els_out <- parse_els_apply(doc_list, xpath = pub_els_xpath)
 
