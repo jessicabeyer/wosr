@@ -25,7 +25,8 @@ get_dfs <- function(one_set) {
     keyword = ut_value_dfs$keyword,
     keywords_plus = ut_value_dfs$keywords_plus,
     grant = grant,
-    doc_type = ut_value_dfs$doc_type
+    doc_type = ut_value_dfs$doc_type,
+    page = page
   )
 }
 
