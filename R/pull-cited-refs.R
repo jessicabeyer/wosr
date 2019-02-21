@@ -135,7 +135,8 @@ pull_one_set_of_cited_refs <- function(query_id, first_record, sid, ...) {
     tot_cites = ".//timescited[1]",
     year = ".//year[1]",
     page = ".//page[1]",
-    volume = ".//volume[1]"
+    volume = ".//volume[1]",
+    page_count = ".//page_count[1]"
   )
   parse_els_apply(doc_list, xpath = xpath)
 }
@@ -145,7 +146,7 @@ cast_cited_ref_df <- function(df) {
   if (!nrow(df)) {
     cols <- c(
       "ut", "doc_id", "title", "journal", "author",
-      "tot_cites", "year", "page", "volume"
+      "tot_cites", "year", "page", "volume", "page_count"
     )
     lst <- vector("list", length(cols))
     names(lst) <- cols
