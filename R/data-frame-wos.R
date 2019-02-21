@@ -33,7 +33,7 @@ get_dfs <- function(one_set) {
 get_pub_df <- function(pub_list) {
 
   pub_level <- c(
-    "ut", "title", "journal", "sortdate", "value", "local_count", "page"
+    "ut", "title", "journal", "sortdate", "value", "local_count", "page_count"
   )
 
   cols <- lapply(pub_list, function(x) {
